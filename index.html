@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="oval">pay.</div>
+        <nav>
+          <ul class="main-header-list">
+            <li>Home </li>
+            <li>Benefit</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Login</li>
+          </ul>
+           <button>Get Started</button> 
+        </nav>
+         <img src="images/icon-hamburger.svg" id="hamburger" alt="">
+      </header>
+      <nav class="nav-mobile">
+        <ul class="main-header-nav-list">
+          <li>Home </li>
+          <li>Benefit</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+          <li>Login</li>
+        </ul>
+         <button>Get Started</button> 
+      </nav>
+  <div class="main-section">
+    <h1>Keep Track of Your Benefit <br> at  Pay Platform Payment</h1>
+    <p>Payment and budgeting digital business made simple</p>
+    <video  poster="images/image 60.png" >
+        <source src="movie.mp4" type="video/mp4">
+      </video>
+      <img src="images/Path.png" alt="" class="bobo">
+</div>
+</body>
+<script>
+   const vid =  document.getElementsByTagName('video')
+   const play = document.querySelector('.bobo')
+   const hamburger = document.querySelector('#hamburger');
+   const  nav = document.querySelector('.nav-mobile')
+   
+   hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show')
+   })
+ 
+
+
+
+   play.addEventListener('click', () => {
+      vid[0].play()
+      vid[0].controls = true
+      play.style.display = 'none'   
+   })
+   
+  
+</script>
+</html>
